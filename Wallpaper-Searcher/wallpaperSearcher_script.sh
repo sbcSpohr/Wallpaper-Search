@@ -1,8 +1,19 @@
 #!/bin/bash
 
+echo
+echo     " -----------------------------------------------------"
+echo    "|                                                     |"
+echo    "|                  Wallpaper-Searcher                 |"
+echo    "|                                                     |"
+echo     " -----------------------------------------------------"
+
 source ./config/config.sh
 
-A="${a}"
+b() {
+	echo "$1" | sed 's/Mb/M/g'
+}
+
+A=$(b "$a")
 API_URL="https://api.pexels.com/v1/search"
 
 script_dir=$(dirname "$(realpath "$0")")
@@ -11,11 +22,13 @@ output_dir="$script_dir/Wallpapers"
 rm -rf "$output_dir"
 mkdir -p "$output_dir"
 
-read -p "Enter the keyword to search the wallpapers: " keyword
-read -p "Enter how many images you would like to download: " num_images
-
-echo "Searching for $keyword wallpapers... "
-color=orange
+echo
+read -p "-- Enter the keyword to search the wallpapers: " keyword
+echo
+read -p "-- Enter how many images you would like to download: " num_images
+echo
+echo "-- Searching for $keyword wallpapers... "
+echo
 
 response=$(curl -G "$API_URL" \
     -H "Authorization: $A" \
