@@ -13,5 +13,5 @@ When you clone the repository you need:
 
     chmod +x wallpaperSearcher_script.sh
 
-After executing, a directory 'Wallpapers' will be created where the script were executed.
+After executing, a directory 'Wallpapers' will be created where the script was executed.
 You can acess the photos at 'Wallpapers'
