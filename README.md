@@ -12,3 +12,6 @@ On a Debian-based system, you can use:
 When you clone the repository you need:
 
     chmod +x wallpaperSearcher_script.sh
+
+After executing, a directory 'Wallpapers' will be created where the script were executed.
+You can acess the photos at 'Wallpapers'
