@@ -2,7 +2,7 @@
 
 Simple script that helps you search and download wallpapers directly from the terminal.
 
-Installing dependencies (Debian-based)
+# Installing dependencies (Debian-based)
 
     sudo apt install curl jq
 
