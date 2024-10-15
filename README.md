@@ -1,17 +1,23 @@
-# Wallpaper-Search
+# Wallpaper Searcher
 
-Make sure the following dependencies are installed on your system:
+Simple script that helps you search and download wallpapers directly from the terminal.
 
-- curl
-- jq
-
-On a Debian-based system, you can use:
+Installing dependencies (Debian-based)
 
     sudo apt install curl jq
 
-When you clone the repository you need:
+# Usage Instructions
 
-    chmod +x wallpaperSearcher_script.sh
+- Clone this repository to your machine:
+  
+        git clone https://github.com/sbcSpohr/Wallpaper-Search.git
+  
+- Make the script executable:
 
-After executing, a directory 'Wallpapers' will be created where the script was executed.
-You can acess the photos at 'Wallpapers'
+        chmod +x wallpaperSearcher_script.sh
+  
+- Run the script:
+
+      ./wallpaperSearcher_script.sh
+
+After running the script, a folder named Wallpapers will be created in the directory where the repository was cloned. All downloaded images will be available in that folder.
